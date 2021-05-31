@@ -15,7 +15,9 @@ import MediaPicker from "react-native-media-picker";
 
 // ...
 
-const result = await MediaPicker.multiply(3, 7);
+const result = await MediaPicker.openPicker((data) => {
+  /* do something with your data */
+});
 ```
 
 ## Contributing
